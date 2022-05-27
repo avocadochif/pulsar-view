@@ -1,0 +1,18 @@
+/build
+/captures
+/certificates
+/release
+.externalNativeBuild
+.DS_Store
+
+# Android Studio
+.idea
+/.idea
+/.idea/workspace.xml
+/.idea/libraries
+*.iml
+
+# Gradle
+.gradle
+/local.properties
+/.gradle/wrapper/gradle-wrapper.properties
