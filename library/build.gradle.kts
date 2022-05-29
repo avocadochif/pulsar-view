@@ -44,7 +44,7 @@ afterEvaluate {
             create("release", MavenPublication::class) {
                 groupId = "com.github.avocadochif"
                 artifactId = "pulsar-view"
-                version = "0.1.1"
+                version = "0.1.3"
                 from(components.getByName("release"))
             }
         }
