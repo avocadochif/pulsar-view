@@ -14,6 +14,6 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "Pulsar"
+rootProject.name = "Pulsar-View"
 include(":app")
 include(":library")
