@@ -37,3 +37,16 @@ dependencies {
     implementation("androidx.appcompat:appcompat:1.4.1")
     implementation("com.google.android.material:material:1.6.0")
 }
+
+afterEvaluate {
+    publishing {
+        publications {
+            create("release", MavenPublication::class) {
+                groupId = "com.github.avocadochif"
+                artifactId = "pulsar-view"
+                version = "0.1.1"
+                from(components.getByName("release"))
+            }
+        }
+    }
+}
