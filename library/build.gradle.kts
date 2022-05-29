@@ -41,11 +41,11 @@ dependencies {
 afterEvaluate {
     publishing {
         publications {
-            create("release", MavenPublication::class) {
+            create<MavenPublication>("release") {
                 groupId = "com.github.avocadochif"
                 artifactId = "pulsar-view"
-                version = "0.1.3"
-                from(components.getByName("release"))
+                version = "0.1.4"
+                from(components["release"])
             }
         }
     }
